@@ -1,0 +1,100 @@
+.container
+    height: 100vh
+    width: 100%
+    background: linear-gradient(45deg, $primary-l, $secondary-n)
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .calc
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        height: 88vh
+        width: 450px
+        background-color: rgba($black-d,0.8)
+        border-radius: 15px
+        box-shadow: 5px 5px 8px rgba($black-d,0.5)
+
+        .result-label
+            margin: 10px 15px
+            border: none
+            border-radius: 15px
+
+            height: 10%
+            width: 93%
+            font-size: 25px
+            font-family: sans-serif
+            text-align: center
+
+            background-color: rgba($white-n,0.8)
+        
+        .controler
+            display: grid
+            grid-template-columns: 2fr 1fr
+
+            margin: 10px 15px
+
+            border-radius: 15px
+
+            height: 80%
+            width: 93%
+
+            background-color: rgba($white-n,0.2)
+
+            .numbers
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                padding: 10px 0px 0px 7px
+                
+                .button
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    color: $white-n
+                    font-family: sans-serif
+                    font-size: 40px
+                    height: 90%
+                    width: 90%
+                    border-radius: 5px
+                    border: 3px solid rgba($white-n, 0.5)
+                    background-color: none
+                    transition: background-color 0.5s
+
+                    &:hover
+                        cursor: pointer
+                        background-color: rgba($white-n, 0.3)
+
+            .action
+                display: grid
+                grid-template-columns: 1fr 1fr
+                padding: 10px 0px 0px 7px
+
+                .button
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    height: 90%
+                    width: 90%
+
+                    color: $white-n
+                    font-family: sans-serif
+                    font-size: 40px
+                    border-radius: 3px
+                    border: 3px solid rgba($white-n, 0.5)
+                    background-color: none
+                    transition: background-color 0.5s
+
+                    &:hover
+                        cursor: pointer
+                        background-color: rgba($white-n, 0.3)
+
+                #egal
+                    height: 190%
